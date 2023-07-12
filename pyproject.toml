@@ -20,6 +20,7 @@ tensorflow = "^2.12.0"
 torch = "1.13"
 phaseportrait = "^1.2.2"
 statsmodels = "^0.14.0"
+validate-docbr = "^1.10.0"
 
 
 [build-system]
