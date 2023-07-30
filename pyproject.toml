@@ -21,6 +21,8 @@ torch = "1.13"
 phaseportrait = "^1.2.2"
 statsmodels = "^0.14.0"
 validate-docbr = "^1.10.0"
+pmdarima = "^2.0.3"
+yfinance = "^0.2.26"
 
 
 [build-system]
