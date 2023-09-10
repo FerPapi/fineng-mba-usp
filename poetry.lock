@@ -137,6 +137,26 @@ files = [
 frozenlist = ">=1.1.0"
 
 [[package]]
+name = "aleatory"
+version = "0.1.2"
+description = "Stochastic Processes Simulation and Visualisation"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "aleatory-0.1.2-py3-none-any.whl", hash = "sha256:c166043b9a0b80d34a6e4d699d4ede153ed2310c61c2ca5369eed1476938e1e1"},
+    {file = "aleatory-0.1.2.tar.gz", hash = "sha256:a48b5d1241405bb3510b0e201b77e81f1b5314391cb0367186a83155a10c5d23"},
+]
+
+[package.dependencies]
+matplotlib = ">=3.6.2"
+numpy = ">=1.23.5"
+pandas = ">=1.5.2"
+parameterized = ">=0.8.1"
+scipy = ">=1.9.3"
+statsmodels = ">=0.13.5"
+
+[[package]]
 name = "anyio"
 version = "3.7.1"
 description = "High level compatibility layer for multiple asynchronous event loop implementations"
@@ -2649,6 +2669,21 @@ files = [
 ]
 
 [[package]]
+name = "parameterized"
+version = "0.9.0"
+description = "Parameterized testing with any Python test framework"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "parameterized-0.9.0-py2.py3-none-any.whl", hash = "sha256:4e0758e3d41bea3bbd05ec14fc2c24736723f243b28d702081aef438c9372b1b"},
+    {file = "parameterized-0.9.0.tar.gz", hash = "sha256:7fc905272cefa4f364c1a3429cbbe9c0f98b793988efb5bf90aac80f08db09b1"},
+]
+
+[package.extras]
+dev = ["jinja2"]
+
+[[package]]
 name = "parso"
 version = "0.8.3"
 description = "A Python Parser"
@@ -4547,4 +4582,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.8,<3.11"
-content-hash = "f958f3fc1eaa802df8f250c5fd54c09ed4199959752894f3fbe46efdcb439eef"
+content-hash = "1f700c0dd3cd8cf87af44122d85ec9fb349deadfbf829686f2189c782cadf329"
