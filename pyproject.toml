@@ -21,6 +21,7 @@ pmdarima = "^2.0.3"
 yfinance = "^0.2.26"
 aleatory = "^0.1.2"
 sympy = "^1.12"
+nashpy = "^0.0.40"
 
 
 [build-system]
