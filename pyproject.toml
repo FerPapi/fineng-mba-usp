@@ -23,6 +23,7 @@ aleatory = "^0.1.2"
 sympy = "^1.12"
 nashpy = "^0.0.40"
 finoptions = "^0.1.5"
+quantlib = "^1.32"
 
 
 [build-system]
