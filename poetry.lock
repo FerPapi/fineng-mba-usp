@@ -758,6 +758,24 @@ files = [
 devel = ["colorama", "json-spec", "jsonschema", "pylint", "pytest", "pytest-benchmark", "pytest-cache", "validictory"]
 
 [[package]]
+name = "finoptions"
+version = "0.1.5"
+description = "Energy derivatives (futures, options etc...)"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "finoptions-0.1.5-py3-none-any.whl", hash = "sha256:4cdb855c58b25c788d504f7819dfff7e11b958e433d06c6d3c7b806b90ab17f5"},
+    {file = "finoptions-0.1.5.tar.gz", hash = "sha256:459afa71516907c02d15cfb4333e133a54aa0c8105ebfccf549659ea5cce007a"},
+]
+
+[package.dependencies]
+matplotlib = "*"
+numdifftools = "*"
+numpy = "*"
+scipy = ">=1.7"
+
+[[package]]
 name = "fonttools"
 version = "4.43.1"
 description = "Tools to manipulate font files"
@@ -1951,6 +1969,25 @@ jupyter-server = ">=1.8,<3"
 test = ["pytest", "pytest-console-scripts", "pytest-jupyter", "pytest-tornasync"]
 
 [[package]]
+name = "numdifftools"
+version = "0.9.41"
+description = "Solves automatic numerical differentiation problems in one or more variables."
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "numdifftools-0.9.41-py2.py3-none-any.whl", hash = "sha256:a8b162e06889ea73643a47b84935a63d8214d4b4b0805d36a3c28c56379b3e51"},
+    {file = "numdifftools-0.9.41.tar.gz", hash = "sha256:4ef705cd3c06211b3a4e9fd05ad622be916dcfda40732f0128805a2c4be389b4"},
+]
+
+[package.dependencies]
+numpy = ">=1.9"
+scipy = ">=0.8"
+
+[package.extras]
+build-sphinx = ["sphinx (>=1.3.1)"]
+
+[[package]]
 name = "numpy"
 version = "1.24.4"
 description = "Fundamental package for array computing in Python"
@@ -2813,6 +2850,95 @@ files = [
 cffi = {version = "*", markers = "implementation_name == \"pypy\""}
 
 [[package]]
+name = "quantlib"
+version = "1.32"
+description = "Python bindings for the QuantLib library"
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "QuantLib-1.32-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:35662d2bd8d37f979b3a17c5866df580afbfae01f47dade3c57892f7bb1982bf"},
+    {file = "QuantLib-1.32-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:714831e7b04a9cc53fbe2594762f8708581b623fd3c7ab43ae2e61e2dbe3c2aa"},
+    {file = "QuantLib-1.32-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:eeaee21a5a19bb8bb4a32d38bf4d9419dcf401cd3c582381bb7cba4a0ded67ea"},
+    {file = "QuantLib-1.32-cp310-cp310-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:983d6b47421c08fe39b4fb696be1bd7103c454ee8b9cb0505f7119bdb13099bf"},
+    {file = "QuantLib-1.32-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:82c3c7ca74c130462ace857fa655e1bc757fa60acfd83a44e34aa98322412966"},
+    {file = "QuantLib-1.32-cp310-cp310-musllinux_1_1_aarch64.whl", hash = "sha256:581badf9dae7435ca5e5c8a0d2c08cdb591eda0593773e96f3c6ca8be4492e76"},
+    {file = "QuantLib-1.32-cp310-cp310-musllinux_1_1_i686.whl", hash = "sha256:9fb124884562935f8cac30d9671b99614c098124bce27d55d7aa639851f05643"},
+    {file = "QuantLib-1.32-cp310-cp310-musllinux_1_1_x86_64.whl", hash = "sha256:54bd8af1d3d98dd49fd63599b6f1ea7f735a61e0a3ce502b30a3cfe899729007"},
+    {file = "QuantLib-1.32-cp310-cp310-win32.whl", hash = "sha256:07270581fc93482a0749810ea1977089b53821138fdea5e391f3fd5776a6cf25"},
+    {file = "QuantLib-1.32-cp310-cp310-win_amd64.whl", hash = "sha256:2ce4cce95b862ae8d6e67a9a131e9595e725b888c11448593c6b9882e0a04db6"},
+    {file = "QuantLib-1.32-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:ffe8659826498978e8adf0d48d34137066aad6596c70d08675f47161107733b7"},
+    {file = "QuantLib-1.32-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:806dbd0e4b38ed9a015cb1d1a1053b7de881614d8c8831d2d784ca7fa8e35af4"},
+    {file = "QuantLib-1.32-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:9fdef6d321cf114493eba50619da53ca71445104b870b624971c6c3331dc831b"},
+    {file = "QuantLib-1.32-cp311-cp311-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:0782bbe43b9ad22241cfae13eca5fb62c3793362b835a99cfc4d4811707ec8db"},
+    {file = "QuantLib-1.32-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:3689964924d7d829df1bd0f17696be8625456c30cac7188fc69ad955c07ffc4a"},
+    {file = "QuantLib-1.32-cp311-cp311-musllinux_1_1_aarch64.whl", hash = "sha256:df84b57a060a9e4fa58e178b3f1d563083eb559bc37119c303a7fc1e8c92491a"},
+    {file = "QuantLib-1.32-cp311-cp311-musllinux_1_1_i686.whl", hash = "sha256:717f73466757ab38d59ad18d6d3fe061f2434262659fdafaf219f2c0804472e9"},
+    {file = "QuantLib-1.32-cp311-cp311-musllinux_1_1_x86_64.whl", hash = "sha256:3ceba4dd0cfc9715bbe8f0a13c263ab027731b972f96e3db3fc4191605b5e58b"},
+    {file = "QuantLib-1.32-cp311-cp311-win32.whl", hash = "sha256:1cffd00d2edc01ec52452493403bb6051b61aa1558a29ad4831e67d035ef51a6"},
+    {file = "QuantLib-1.32-cp311-cp311-win_amd64.whl", hash = "sha256:21018aca284662bede556703c731e4a3df9cfe95c3b463d2cdda438c6b9f5b65"},
+    {file = "QuantLib-1.32-cp312-cp312-macosx_10_9_x86_64.whl", hash = "sha256:f3f077397ee5ed17b09e07a965fec993fa9ca8188d737c54156849e4401d0fb8"},
+    {file = "QuantLib-1.32-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:7634638bb3de0d91841176f88a6d8fe468917e36ede4cab37f2eccc20ef9c488"},
+    {file = "QuantLib-1.32-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:1e8a082127d519bc4c1714e0a45df5c949259e74998463472d4137c4d93a819f"},
+    {file = "QuantLib-1.32-cp312-cp312-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:c6b454c0f807b4922d92fc4b3fd6fd880d6ecb14b017e53e7b58d1a35f72a54e"},
+    {file = "QuantLib-1.32-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:ae413112cdeeb115c75aa4fb5b8a4e392987f12cfd1e2544a658dfd5a2bc707e"},
+    {file = "QuantLib-1.32-cp312-cp312-musllinux_1_1_aarch64.whl", hash = "sha256:6da0c298e738e85131fdff8c148815e29d909c138fd1a046d42d8ae11c85675f"},
+    {file = "QuantLib-1.32-cp312-cp312-musllinux_1_1_i686.whl", hash = "sha256:a1cd0e21315c1a44de81c0a9c6762101f57abb862e1f3934b9e01a057a727097"},
+    {file = "QuantLib-1.32-cp312-cp312-musllinux_1_1_x86_64.whl", hash = "sha256:f6837a6eb2b1b18a182a00d56036a37076ab3994311f8bfd00ea4419ce08f270"},
+    {file = "QuantLib-1.32-cp312-cp312-win32.whl", hash = "sha256:0c90e554196654992b7e9c62d680073aedd634346107c75e969761e364b8d983"},
+    {file = "QuantLib-1.32-cp312-cp312-win_amd64.whl", hash = "sha256:5a9582d6a06faebfe8b5538d7db515208238396845af9ad7735f862a79df68f3"},
+    {file = "QuantLib-1.32-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:8888d03b090b1e1e9454aaabb7d10bcff16a0d0993028e8c692a0df8812a79d4"},
+    {file = "QuantLib-1.32-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:ca45e925b0bc658212f228747550990d7b92c939098380f0b6a5a92c3a16f83a"},
+    {file = "QuantLib-1.32-cp37-cp37m-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:ed8a5572d678e5eeb3cb4b587fb98ef1828705182b56584a9771629e41a563b1"},
+    {file = "QuantLib-1.32-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:972f423fdc0190e0b7c6ecdbd8dfb3e699c26eb66fea7bca55e4b5af0dda4d0f"},
+    {file = "QuantLib-1.32-cp37-cp37m-musllinux_1_1_aarch64.whl", hash = "sha256:36fe4095bc8a78b4dc92f423cb0e73170893e950d2ed69f92b23f1099e38762a"},
+    {file = "QuantLib-1.32-cp37-cp37m-musllinux_1_1_i686.whl", hash = "sha256:09bdc5cdd5970ebe4ce2cf1cb41042b5a5e2743ed651248e93db743b82fbe627"},
+    {file = "QuantLib-1.32-cp37-cp37m-musllinux_1_1_x86_64.whl", hash = "sha256:d9f9d806e1a9d7a478bf3ffe05ebf5f287ba961a143541248d376f8b68558078"},
+    {file = "QuantLib-1.32-cp37-cp37m-win32.whl", hash = "sha256:ca9b63830261f87f3b4d5f76595bb6f09bbaea4035fc81d4c4fee28a96f05aa3"},
+    {file = "QuantLib-1.32-cp37-cp37m-win_amd64.whl", hash = "sha256:977441e2592634ceb6c824876b7ad190fb8673b4031b8665526d686d7efbdfae"},
+    {file = "QuantLib-1.32-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:fd9fb61a2977b519d4439f7a31ff231623861339c7cc359bb03f174dca66d8dc"},
+    {file = "QuantLib-1.32-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:de295623d25fda5bb44cbdaf6be3c587c9a797f30c26974928712c48c84d4dd6"},
+    {file = "QuantLib-1.32-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:65ddd6690b810b71c449f989e3ee1a916ab9372d452dfcb3fe8c5e98f371eb65"},
+    {file = "QuantLib-1.32-cp38-cp38-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:6e4ec13c6651b006c043470a107a8e1f9c0c6d3f596c476e930a1b17224c9167"},
+    {file = "QuantLib-1.32-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:6671ddaa544ec42c94141cde7aa4396f83ac04dc1bcbc6f600f7dab4ad48e111"},
+    {file = "QuantLib-1.32-cp38-cp38-musllinux_1_1_aarch64.whl", hash = "sha256:dbbf5cf7185f03e63d1d0be8fe6aae8f5ae9a0aaa47394d5ed8e1b3ac8884b07"},
+    {file = "QuantLib-1.32-cp38-cp38-musllinux_1_1_i686.whl", hash = "sha256:f802396171239009030a29236c2028c769cec9d66fd4479e2623a5b918d60597"},
+    {file = "QuantLib-1.32-cp38-cp38-musllinux_1_1_x86_64.whl", hash = "sha256:b9d8937ac80713b20cd7e700466925b66e88b189e33a795893489509e733f032"},
+    {file = "QuantLib-1.32-cp38-cp38-win32.whl", hash = "sha256:98f974aa817e4d5c4912049c8cac4233b29af798817f5b1e9f4a5e446e9c50b2"},
+    {file = "QuantLib-1.32-cp38-cp38-win_amd64.whl", hash = "sha256:cfde4664387b8ea4b5252a8a572d4f13a983f6456e2dbfee3c41ef6af3bdcf19"},
+    {file = "QuantLib-1.32-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:f5de7d904761cf4f03ccc7e1ea307e214e829db30bb9738d82870389a78f17da"},
+    {file = "QuantLib-1.32-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:7fed76323fc0b21856795444c983d90534b6cb894477531b8a040c18a2f85bba"},
+    {file = "QuantLib-1.32-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:b31bcb7fc6708177144ab4eeff892e5c74c7d0436a67f814d82b33f1e10380ee"},
+    {file = "QuantLib-1.32-cp39-cp39-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:8e8d5c2070820ab7e837f37cb834957ef7bff884b8520fdf0439ec6899a36728"},
+    {file = "QuantLib-1.32-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:45c31ec8ac0a53ee55096b8c730b046461673e735e165b659116094fb03ba4cc"},
+    {file = "QuantLib-1.32-cp39-cp39-musllinux_1_1_aarch64.whl", hash = "sha256:394a9abcaad0b7617e8684893fe05d0cd6568fe9ef29e1fb40979c06c2352b87"},
+    {file = "QuantLib-1.32-cp39-cp39-musllinux_1_1_i686.whl", hash = "sha256:d1f62ba9f7a4cf6eedbaa8a5640d7a2aeb147c75388fd8622f393a2fb713e79f"},
+    {file = "QuantLib-1.32-cp39-cp39-musllinux_1_1_x86_64.whl", hash = "sha256:2131324a731ca638387845ced161a6beacf03f92f21b4c8d7ae6037d27df143a"},
+    {file = "QuantLib-1.32-cp39-cp39-win32.whl", hash = "sha256:ddeabcf74c1b1d131630a0a054c066025edcd3c98be26c50ec95b2653ef196ae"},
+    {file = "QuantLib-1.32-cp39-cp39-win_amd64.whl", hash = "sha256:5cb9a7adcc855390b8a3d98faabddcb588c59fe8ed92d7f387eb171880bdb05f"},
+    {file = "QuantLib-1.32-pp310-pypy310_pp73-macosx_10_9_x86_64.whl", hash = "sha256:43cfe846ccc7fd3e87bb1a92c7b04c7d2075c7a484e44b43c04c4d30ab20b3c0"},
+    {file = "QuantLib-1.32-pp310-pypy310_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:b670d1641c5cb75647d296eaae16b2b6d7db22eb8b48def4690252c20cde02c8"},
+    {file = "QuantLib-1.32-pp310-pypy310_pp73-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:5412c0cd94269d5e74a720de9b28b9d1f475d97acca584e0450aeb525358d65c"},
+    {file = "QuantLib-1.32-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:dca78ec0fb726710cc35bba03a70d135d382ccc615086da7379d3ceb7baeda03"},
+    {file = "QuantLib-1.32-pp310-pypy310_pp73-win_amd64.whl", hash = "sha256:818df0f5e8f3db42b92b4797d0db068ccb06a4675169affbc315f9876399a80a"},
+    {file = "QuantLib-1.32-pp37-pypy37_pp73-macosx_10_9_x86_64.whl", hash = "sha256:7967fbc4d3884744c35e81393434578b40b1afd7cd0dc72ccd05d27ed7aa1730"},
+    {file = "QuantLib-1.32-pp37-pypy37_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:782e95495171ff62a51cfb672a376454de1e76bc83abe1958af96b37b1e7782d"},
+    {file = "QuantLib-1.32-pp37-pypy37_pp73-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:f7e10bcf1a59b3270feb6ee6c757fb270de0e7b0ed87ad72d8fbf9af95d68ed6"},
+    {file = "QuantLib-1.32-pp37-pypy37_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:be82486aec6162a0ed52db32bcd0e5ba766633d930d2bab0f824240aa3f28c59"},
+    {file = "QuantLib-1.32-pp37-pypy37_pp73-win_amd64.whl", hash = "sha256:e499cc4c8146e6982d1208c246a9cf10d5c2ae627f2525df6d5b96f7c9c1687f"},
+    {file = "QuantLib-1.32-pp38-pypy38_pp73-macosx_10_9_x86_64.whl", hash = "sha256:9db723342aca52b93b7836bc88d2cf6cd6119f87deefd28da393a83a6c166572"},
+    {file = "QuantLib-1.32-pp38-pypy38_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:6b8470b189c741316084b00b117a70751976d266c57f50b29f36f31e33517015"},
+    {file = "QuantLib-1.32-pp38-pypy38_pp73-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:75916b24b5b2457c7a479e3dadfaf9406387d7876c082df5f88fdf2714958726"},
+    {file = "QuantLib-1.32-pp38-pypy38_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:a001c451be80d96eb1527c3166acafa525d3587b691872e1a5f6b12d26e5fc96"},
+    {file = "QuantLib-1.32-pp38-pypy38_pp73-win_amd64.whl", hash = "sha256:e4d2c245f437836e05f3601b04626331ebb0e15d1be0a85890e3a1a5230e4e12"},
+    {file = "QuantLib-1.32-pp39-pypy39_pp73-macosx_10_9_x86_64.whl", hash = "sha256:3dfd0bcc74d69c686c3de04120fb92f939c44fb0c0d56c766c6013b9c3800035"},
+    {file = "QuantLib-1.32-pp39-pypy39_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:2a957bf4c92efe2bbd508102a84cf81a5a74adb3bd04d5486e1e40bddab6fd02"},
+    {file = "QuantLib-1.32-pp39-pypy39_pp73-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:2acd9eb68db03ca7a687408d6ba8849f17b9370f716dfd44229e674f4301382f"},
+    {file = "QuantLib-1.32-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:53cf49b4abce46cc2b0346b6489566e08ba445723ba92d8544a4821a56e66d3c"},
+    {file = "QuantLib-1.32-pp39-pypy39_pp73-win_amd64.whl", hash = "sha256:c76b51c967b11b595c414bc3554a609e56347c82cf64a6682506af2e834ca91f"},
+]
+
+[[package]]
 name = "referencing"
 version = "0.30.2"
 description = "JSON Referencing + Python"
@@ -3635,4 +3761,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.8,<3.11"
-content-hash = "4a18d500aa1f003d7021e75cac944a4d885ba750beedfe1f1c8112980ce83a22"
+content-hash = "3cc8a4c9890b62984e45448b3247fd9c6e2b421183d06041fb90dcab98aeb6f4"
